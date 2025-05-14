@@ -1,0 +1,70 @@
+/* right side  */
+
+.right-side {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+}
+
+.contact-info-box {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contact-info-box p {
+  color: rgb(163, 163, 163);
+  font-size: 20px;
+  margin-left: 10px;
+}
+
+.contact-info-box > .contact-setting-box{
+  display: flex;
+  align-items: center;
+}
+
+.contact-info-box > .contact-setting-box > div {
+  padding: 8px 8px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.contact-info-box > .contact-setting-box > div:hover {
+  background-color: rgb(96, 96, 96);
+}
+
+.contact-info-box > .contact-setting-box > div > img {
+  height: 15px;
+}
+
+.contact-box {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 5px 0px 5px 0px;
+}
+
+.contact-box:hover {
+  background-color: rgb(96, 96, 96);
+}
+
+.contact-box  > img {
+  width: 40px;
+  height: 40px;
+  border-radius: 30px;
+  margin-right: 15px;
+  margin-left: 10px;
+}
+
+.contact-box > p {
+  color: white;
+  font-size: 14px;
+}

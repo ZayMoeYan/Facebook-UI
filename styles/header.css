@@ -1,0 +1,105 @@
+.header {
+  background-color: rgb(42, 42, 42);
+  display: flex;
+  flex-direction: row;
+  height: 56px;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  right: 0;
+  left: 0;
+  z-index: 20;
+}
+
+.left-box {
+  display: flex;
+  flex-direction: row;
+  width: 330px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.facebook {
+  height: 40px;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 250px;
+  position: relative;
+  margin-left: -10px;
+}
+
+.search {
+  height: 15px;
+  position: absolute;
+  left: 10px;
+}
+
+.search-bar {
+  border: none;
+  border-radius: 30px;
+  padding: 10px 47px 10px 35px;
+  background-color: rgb(65, 65, 65);
+  color: white;
+  font-size: 15px;
+}
+
+.search-bar::placeholder {
+  font-size: 13px;
+  color: rgb(175, 175, 175);
+  letter-spacing: 0.4px;
+}
+
+.middle-box {
+  display: flex;
+  flex-direction: row;
+  margin-left: -80px;
+  width: 590px;
+  justify-content: space-between;
+}
+
+.nav-box {
+  padding: 12px 40px;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 7px;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.nav-box:hover {
+  background-color: rgb(65, 65, 65);
+}
+
+.middle-box .nav-box img {
+  height: 24px;
+}
+
+.right-box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.right-box .box img {
+  height: 17px;
+}
+
+.right-box .box {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(65, 65, 65);
+  border-radius: 50px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+
+.right-box .box:hover {
+  background-color: rgb(96, 96, 96);
+}
