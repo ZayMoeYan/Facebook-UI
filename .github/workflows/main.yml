@@ -1,0 +1,24 @@
+name: Deploy HTML/CSS to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  
+  workflow_dispatch: 
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest 
+
+    steps:
+    
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      # Step 2: Deploy to GitHub Pages using peaceiris/actions-gh-pages
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub token automatically provided by GitHub Actions
+          publish_dir: ./  # Pointing to the root directory of your project (where index.html and styles.css are located)
+          publish_branch: gh-pages  # Deploy to the 'gh-pages' branch
