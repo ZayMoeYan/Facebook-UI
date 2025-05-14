@@ -1,0 +1,22 @@
+name: Deploy Facebook UI to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # This triggers the workflow on push to the 'main' branch
+  workflow_dispatch:  # This allows you to trigger the workflow manually from the GitHub Actions tab
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3  # This checks out the code from your repository
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3  # This action helps deploy to GitHub Pages
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub automatically provides this token
+          publish_dir: ./  # The root directory, where your index.html and styles.css are located
+          publish_branch: gh-pages  # The branch where GitHub Pages will be deployed (usually 'gh-pages')
